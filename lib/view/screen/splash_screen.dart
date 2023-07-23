@@ -18,7 +18,7 @@ class _Splash_screenState extends State<Splash_screen> {
     return Scaffold(
       body: SplashScreenView(
         imageSrc: 'assets/images/img.png',
-        navigateRoute: Home_page(),
+        navigateRoute: const Home_page(),
         duration: const Duration(seconds: 3),
         backgroundColor: Colors.black,
         text: WavyAnimatedText(
@@ -33,4 +33,4 @@ class _Splash_screenState extends State<Splash_screen> {
     );
   }
 }
-// weather.png
+// weather.pngH

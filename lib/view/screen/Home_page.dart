@@ -41,7 +41,7 @@ class _Home_pageState extends State<Home_page> {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
-                          "https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-size_restricted.gif"),
+                          "https://img.freepik.com/free-photo/weather-effects-composition_23-2149853303.jpg?w=740&t=st=1690101354~exp=1690101954~hmac=5e5b688f5e7d1050529b93d040ffc4ae73260768bf1ee39b5d364f9aed301b8f"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -196,6 +196,7 @@ class _Home_pageState extends State<Home_page> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 10),
                                   child: Text("Weather Details",
+                                    overflow: TextOverflow.ellipsis,
                                     style: GoogleFonts.akshar(
                                         color: Colors.white,
                                         fontSize: 22),
@@ -289,9 +290,7 @@ class _Home_pageState extends State<Home_page> {
                                   ],
                                 ),
                                 const SizedBox(height: 40),
-                                SingleChildScrollView(
-                                  scrollDirection: Axis.horizontal,
-                                  child: Row(
+                                Row(
                                     children: [
                                       const SizedBox(width: 5),
                                       Column(
@@ -330,7 +329,6 @@ class _Home_pageState extends State<Home_page> {
                                       ),
                                     ],
                                   ),
-                                )
                               ],
                             ),
                           )

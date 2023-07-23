@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:weather_app/view/screen/Home_page.dart';
 import 'package:weather_app/view/screen/about_page.dart';
 import 'package:weather_app/view/screen/add_city_page.dart';
@@ -13,7 +12,6 @@ import 'package:weather_app/weather_provider/weather_provider.dart';
 
 void main() async{
     WidgetsFlutterBinding.ensureInitialized();
-    SharedPreferences prefs = await SharedPreferences.getInstance();
 
     runApp(
       MultiProvider(
